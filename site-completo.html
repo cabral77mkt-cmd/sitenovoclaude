@@ -1166,6 +1166,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }
 
+  /* Aparelhos sem foto – ícone + gradiente */
+  .aparelho-card__img { background: linear-gradient(135deg,#e8f4fd 0%,#d0eaf8 100%); display:flex; align-items:center; justify-content:center; }
+  .aparelho-card__img img { display:none; }
+  .aparelho-icon { font-size:4rem; }
+  /* Ocultar seção Antes & Depois (sem fotos) */
+  .antes-depois { display:none !important; }
+  /* Avatar inicial nos depoimentos */
+  .depo-card__author img { display:none; }
+  .depo-avatar { width:52px; height:52px; border-radius:50%; background:var(--blue); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font1); font-weight:700; font-size:1.2rem; border:3px solid var(--blue); flex-shrink:0; }
   </style>
 </head>
 <body>
@@ -1201,7 +1210,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 ====================================================== -->
 <section class="hero" id="hero">
   <div class="hero__bg">
-    <img src="img/hero-bg.jpg" alt="Dr. Fábio Faggione no consultório" class="hero__img" />
+    <img src="https://litter.catbox.moe/rkardr.jpeg" alt="Dr. Fábio Faggione no consultório" class="hero__img" />
     <div class="hero__overlay"></div>
   </div>
 
@@ -1335,7 +1344,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
       <div class="aparelho-card" data-aos="fade-up" data-aos-delay="0">
         <div class="aparelho-card__img">
-          <img src="img/alinhador.jpg" alt="Alinhadores invisíveis" loading="lazy" />
+          <span class="aparelho-icon">🦷</span>
           <div class="aparelho-card__badge">Mais procurado</div>
         </div>
         <div class="aparelho-card__body">
@@ -1347,7 +1356,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
       <div class="aparelho-card" data-aos="fade-up" data-aos-delay="100">
         <div class="aparelho-card__img">
-          <img src="img/autoligado.jpg" alt="Aparelho autoligado metálico" loading="lazy" />
+          <span class="aparelho-icon">⚙️</span>
         </div>
         <div class="aparelho-card__body">
           <h3>Autoligado Metálico</h3>
@@ -1358,7 +1367,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
       <div class="aparelho-card" data-aos="fade-up" data-aos-delay="200">
         <div class="aparelho-card__img">
-          <img src="img/porcelana.jpg" alt="Aparelho estético de porcelana" loading="lazy" />
+          <span class="aparelho-icon">✨</span>
         </div>
         <div class="aparelho-card__body">
           <h3>Estético de Porcelana</h3>
@@ -1369,7 +1378,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
       <div class="aparelho-card" data-aos="fade-up" data-aos-delay="300">
         <div class="aparelho-card__img">
-          <img src="img/colorido.jpg" alt="Aparelho tradicional colorido" loading="lazy" />
+          <span class="aparelho-icon">🎨</span>
           <div class="aparelho-card__badge aparelho-card__badge--pink">Teen</div>
         </div>
         <div class="aparelho-card__body">
@@ -1474,7 +1483,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   <div class="container sobre__inner">
     <div class="sobre__img-wrap" data-aos="fade-right" data-aos-duration="900">
       <div class="sobre__img-deco"></div>
-      <img src="img/dentista.jpg" alt="Dr. Fábio Faggione – Ortodontista em Jales-SP" class="sobre__img" loading="lazy" />
+      <img src="https://litter.catbox.moe/70300w.jpg" alt="Dr. Fábio Faggione – Ortodontista em Jales-SP" class="sobre__img" loading="lazy" />
       <div class="sobre__img-badge">
         <i class="fa-solid fa-tooth"></i>
         <div>
@@ -1518,16 +1527,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     </div>
     <div class="galeria__grid" data-aos="fade-up" data-aos-delay="150">
       <div class="galeria__item galeria__item--large">
-        <img src="img/consultorio1.jpg" alt="Consultório – recepção" loading="lazy" />
+        <img src="https://litter.catbox.moe/9w35t7.jpg" alt="Consultório – recepção" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="img/consultorio2.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
+        <img src="https://litter.catbox.moe/yagdsu.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="img/consultorio3.jpg" alt="Consultório – equipamentos" loading="lazy" />
+        <img src="https://litter.catbox.moe/pl6u8r.jpg" alt="Consultório – equipamentos" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="img/consultorio4.jpg" alt="Dr. Fábio com paciente" loading="lazy" />
+        <img src="https://litter.catbox.moe/uylkun.jpg" alt="Dr. Fábio com paciente" loading="lazy" />
       </div>
     </div>
   </div>
@@ -1551,7 +1560,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Sempre tive vergonha de sorrir e o Dr. Fábio mudou completamente isso. Resultado incrível e atendimento nota 10!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente1.jpg" alt="Fernanda O." loading="lazy" />
+              <div class="depo-avatar">F</div>
               <div>
                 <strong>Fernanda O.</strong>
                 <span>Paciente há 2 anos</span>
@@ -1565,7 +1574,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"O planejamento 3D me deixou muito mais segura para começar. Pude ver meu sorriso final antes de tudo. Recomendo demais!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente2.jpg" alt="Mariana T." loading="lazy" />
+              <div class="depo-avatar">M</div>
               <div>
                 <strong>Mariana T.</strong>
                 <span>Alinhadores invisíveis</span>
@@ -1579,7 +1588,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Consultório moderno, equipe atenciosa e resultado além do esperado. Minha filha amou o aparelho colorido!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente3.jpg" alt="Patrícia N." loading="lazy" />
+              <div class="depo-avatar">P</div>
               <div>
                 <strong>Patrícia N.</strong>
                 <span>Mãe de paciente</span>
@@ -1593,7 +1602,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Fiz o tratamento em 13 meses! Muito mais rápido do que esperava. O Dr. Fábio é extremamente competente e cuidadoso."</p>
             <div class="depo-card__author">
-              <img src="img/paciente4.jpg" alt="Ricardo B." loading="lazy" />
+              <div class="depo-avatar">R</div>
               <div>
                 <strong>Ricardo B.</strong>
                 <span>Aparelho autoligado</span>
@@ -1686,7 +1695,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 ====================================================== -->
 <section class="cta-final" id="cta-final">
   <div class="cta-final__bg">
-    <img src="img/sorriso-closeup.jpg" alt="Sorriso lindo após tratamento ortodôntico" loading="lazy" />
+    <img src="https://litter.catbox.moe/rkardr.jpeg" alt="Sorriso lindo após tratamento ortodôntico" loading="lazy" />
     <div class="cta-final__overlay"></div>
   </div>
   <div class="container cta-final__inner" data-aos="zoom-in" data-aos-duration="800">
