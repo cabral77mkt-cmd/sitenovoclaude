@@ -778,6 +778,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   grid-row: 1 / 3;
   height: 536px;
 }
+.galeria__item--full {
+  grid-column: 1 / 3;
+  height: 340px;
+}
 .galeria__item img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -1110,6 +1114,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .galeria__grid { grid-template-columns: 1fr 1fr; }
   .galeria__item--large { grid-column: 1 / 3; grid-row: auto; height: 280px; }
+  .galeria__item--full { grid-column: 1 / 3; height: 260px; }
   .galeria__item { height: 200px; }
   /* NAV */
   .nav {
@@ -1157,6 +1162,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .hero__title { font-size: 2rem; }
   .depo-card { padding: 24px 20px; }
   .galeria__item--large { height: 220px; }
+  .galeria__item--full { height: 220px; }
   .galeria__item { height: 160px; }
 }
 
@@ -1533,10 +1539,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
         <img src="https://litter.catbox.moe/yagdsu.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="https://litter.catbox.moe/pl6u8r.jpg" alt="Consultório – equipamentos" loading="lazy" />
+        <img src="https://litter.catbox.moe/pl6u8r.jpg" alt="Dr. Fábio no consultório" loading="lazy" style="object-position: top center;" />
       </div>
-      <div class="galeria__item">
-        <img src="https://litter.catbox.moe/uylkun.jpg" alt="Dr. Fábio com paciente" loading="lazy" />
+      <div class="galeria__item galeria__item--full">
+        <img src="https://litter.catbox.moe/uylkun.jpg" alt="Dr. Fábio com paciente" loading="lazy" style="object-position: top center;" />
       </div>
     </div>
   </div>
