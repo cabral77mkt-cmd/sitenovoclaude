@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Fábio Faggione – Ortodontia em Jales-SP. Tratamentos modernos, alinhadores invisíveis, aparelhos estéticos e muito mais. Agende sua avaliação gratuita!" />
+  <title>Dr. Fábio Faggione | Ortodontia em Jales-SP</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ======================================================
+     HEADER / NAV
+====================================================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__icon"><i class="fa-solid fa-tooth"></i></span>
+      <span class="logo__text">Dr. Fábio <strong>Faggione</strong></span>
+    </a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#beneficios" class="nav__link">Benefícios</a></li>
+        <li><a href="#aparelhos" class="nav__link">Aparelhos</a></li>
+        <li><a href="#antes-depois" class="nav__link">Resultados</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+      </ul>
+      <a href="#hero-form" class="btn btn--nav">Agendar Avaliação</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="img/hero-bg.jpg" alt="Dr. Fábio Faggione no consultório" class="hero__img" />
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__content" data-aos="fade-right" data-aos-duration="900">
+      <div class="hero__badges">
+        <span class="badge badge--gold"><i class="fa-solid fa-star"></i> +1.200 sorrisos transformados</span>
+        <span class="badge badge--teal"><i class="fa-solid fa-award"></i> +10 anos de experiência</span>
+      </div>
+      <h1 class="hero__title">Seu novo sorriso <span class="highlight">começa aqui.</span></h1>
+      <p class="hero__sub">Tratamentos ortodônticos modernos, confortáveis e sob medida para você em Jales-SP.</p>
+      <a href="https://wa.me/5517997927094" target="_blank" rel="noopener" class="btn btn--whatsapp hero__wa">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+      </a>
+    </div>
+
+    <!-- MINI FORM -->
+    <div class="hero__form-wrap" id="hero-form" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+      <div class="form-card">
+        <p class="form-card__label">Avaliação 100% gratuita</p>
+        <h3 class="form-card__title">Agende agora e transforme seu sorriso</h3>
+        <form class="form" id="leadForm" novalidate>
+          <div class="form__group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form__group">
+            <label for="whatsapp">WhatsApp *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(17) 99999-9999" required />
+          </div>
+          <div class="form__group">
+            <label for="cidade">Cidade *</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required />
+          </div>
+          <div class="form__check">
+            <input type="checkbox" id="lgpd" name="lgpd" required />
+            <label for="lgpd">Autorizo contato para agendar minha avaliação.</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fa-solid fa-calendar-check"></i> Agendar minha avaliação
+          </button>
+        </form>
+        <p class="form-card__privacy"><i class="fa-solid fa-lock"></i> Seus dados estão seguros. Não enviamos spam.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</section>
+
+<!-- ======================================================
+     NÚMEROS / TRUST BAR
+====================================================== -->
+<section class="trust-bar">
+  <div class="container trust-bar__inner">
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="0">
+      <span class="trust-item__num counter" data-target="1200">0</span><span class="trust-item__plus">+</span>
+      <p>Pacientes atendidos</p>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+      <span class="trust-item__num counter" data-target="10">0</span><span class="trust-item__plus">+</span>
+      <p>Anos de experiência</p>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+      <span class="trust-item__num counter" data-target="98">0</span><span class="trust-item__plus">%</span>
+      <p>de satisfação</p>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+      <span class="trust-item__num">5.0</span><span class="trust-item__plus"> ★</span>
+      <p>no Google</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     BENEFÍCIOS
+====================================================== -->
+<section class="beneficios" id="beneficios">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Por que escolher o Dr. Fábio?</span>
+      <h2 class="section-title">Tratamento de excelência <br />do início ao fim</h2>
+    </div>
+    <div class="beneficios__grid">
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <i class="fa-solid fa-eye-slash"></i>
+        </div>
+        <h3>Discreto</h3>
+        <p>Alinhadores ou bráquetes estéticos que quase não aparecem no dia a dia.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="benefit-card__icon benefit-card__icon--teal">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3>Rápido & Confortável</h3>
+        <p>Tecnologia avançada que reduz o número de consultas e minimiza o desconforto.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="benefit-card__icon benefit-card__icon--blue">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <h3>Planejamento 3D</h3>
+        <p>Visualize o resultado do seu sorriso em 3D antes mesmo de começar o tratamento.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="benefit-card__icon benefit-card__icon--teal">
+          <i class="fa-solid fa-credit-card"></i>
+        </div>
+        <h3>Facilidade no Pagamento</h3>
+        <p>Parcelamos em até 12× no cartão ou boleto, sem surpresas no bolso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     APARELHOS / SERVIÇOS
+====================================================== -->
+<section class="aparelhos" id="aparelhos">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Nossas opções</span>
+      <h2 class="section-title">Qual é o aparelho ideal <br />para você?</h2>
+    </div>
+    <div class="aparelhos__grid">
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="aparelho-card__img">
+          <img src="img/alinhador.jpg" alt="Alinhadores invisíveis" loading="lazy" />
+          <div class="aparelho-card__badge">Mais procurado</div>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Alinhadores Invisíveis</h3>
+          <p>Removíveis, confortáveis e quase invisíveis. Ideal para quem quer discrição total.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20alinhadores%20invisíveis." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="aparelho-card__img">
+          <img src="img/autoligado.jpg" alt="Aparelho autoligado metálico" loading="lazy" />
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Autoligado Metálico</h3>
+          <p>Menos atrito, mais rapidez no tratamento. Alta eficiência e menor número de consultas.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20autoligado." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="aparelho-card__img">
+          <img src="img/porcelana.jpg" alt="Aparelho estético de porcelana" loading="lazy" />
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Estético de Porcelana</h3>
+          <p>Transparência e elegância. Une eficácia com estética superior para adultos.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20estético%20de%20porcelana." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="aparelho-card__img">
+          <img src="img/colorido.jpg" alt="Aparelho tradicional colorido" loading="lazy" />
+          <div class="aparelho-card__badge aparelho-card__badge--pink">Teen</div>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Tradicional Colorido</h3>
+          <p>Borracha colorida que é sucesso entre os adolescentes. Divertido e funcional!</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20colorido." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     ANTES & DEPOIS
+====================================================== -->
+<section class="antes-depois" id="antes-depois">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Resultados reais</span>
+      <h2 class="section-title">Veja a diferença <br />em cada sorriso</h2>
+    </div>
+
+    <div class="swiper antesdepois-swiper" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="caso-card">
+            <div class="caso-card__imgs">
+              <div class="caso-img">
+                <span class="caso-img__label">Antes</span>
+                <img src="img/antes1.jpg" alt="Antes do tratamento – caso Ana" loading="lazy" />
+              </div>
+              <div class="caso-divider"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="caso-img">
+                <span class="caso-img__label caso-img__label--after">Depois</span>
+                <img src="img/depois1.jpg" alt="Depois do tratamento – caso Ana" loading="lazy" />
+              </div>
+            </div>
+            <div class="caso-card__info">
+              <p class="caso-card__name">Caso Ana S.</p>
+              <p class="caso-card__time"><i class="fa-regular fa-clock"></i> 14 meses de tratamento</p>
+              <div class="caso-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="caso-card">
+            <div class="caso-card__imgs">
+              <div class="caso-img">
+                <span class="caso-img__label">Antes</span>
+                <img src="img/antes2.jpg" alt="Antes do tratamento – caso Carlos" loading="lazy" />
+              </div>
+              <div class="caso-divider"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="caso-img">
+                <span class="caso-img__label caso-img__label--after">Depois</span>
+                <img src="img/depois2.jpg" alt="Depois do tratamento – caso Carlos" loading="lazy" />
+              </div>
+            </div>
+            <div class="caso-card__info">
+              <p class="caso-card__name">Caso Carlos M.</p>
+              <p class="caso-card__time"><i class="fa-regular fa-clock"></i> 18 meses de tratamento</p>
+              <div class="caso-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="caso-card">
+            <div class="caso-card__imgs">
+              <div class="caso-img">
+                <span class="caso-img__label">Antes</span>
+                <img src="img/antes3.jpg" alt="Antes do tratamento – caso Letícia" loading="lazy" />
+              </div>
+              <div class="caso-divider"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="caso-img">
+                <span class="caso-img__label caso-img__label--after">Depois</span>
+                <img src="img/depois3.jpg" alt="Depois do tratamento – caso Letícia" loading="lazy" />
+              </div>
+            </div>
+            <div class="caso-card__info">
+              <p class="caso-card__name">Caso Letícia R.</p>
+              <p class="caso-card__time"><i class="fa-regular fa-clock"></i> 12 meses de tratamento</p>
+              <div class="caso-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SOBRE
+====================================================== -->
+<section class="sobre" id="sobre">
+  <div class="container sobre__inner">
+    <div class="sobre__img-wrap" data-aos="fade-right" data-aos-duration="900">
+      <div class="sobre__img-deco"></div>
+      <img src="img/dentista.jpg" alt="Dr. Fábio Faggione – Ortodontista em Jales-SP" class="sobre__img" loading="lazy" />
+      <div class="sobre__img-badge">
+        <i class="fa-solid fa-tooth"></i>
+        <div>
+          <strong>CRO-SP</strong>
+          <span>Especialista em Ortodontia</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre__content" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+      <span class="section-tag">Quem é o Dr. Fábio?</span>
+      <h2 class="section-title">Especialista em transformar sorrisos há mais de 10 anos.</h2>
+      <p class="sobre__text">Sou o Dr. Fábio Faggione, ortodontista com registro no CRO-SP. Com formação especializada em Ortodontia e aperfeiçoamento contínuo em planejamento digital 3D, dedico minha carreira a ajudar pacientes a reconquistar autoestima e saúde bucal através de tratamentos verdadeiramente personalizados.</p>
+      <ul class="sobre__bullets">
+        <li><i class="fa-solid fa-check-circle"></i> Atendimento humanizado do início ao fim</li>
+        <li><i class="fa-solid fa-check-circle"></i> Equipamentos de última geração</li>
+        <li><i class="fa-solid fa-check-circle"></i> Ambiente acolhedor e seguro</li>
+        <li><i class="fa-solid fa-check-circle"></i> Planejamento digital com visualização do resultado</li>
+        <li><i class="fa-solid fa-check-circle"></i> Atualização constante nas melhores técnicas</li>
+      </ul>
+      <div class="sobre__certs">
+        <span class="cert-badge"><i class="fa-solid fa-shield-halved"></i> CRO-SP</span>
+        <span class="cert-badge"><i class="fa-solid fa-medal"></i> ABO</span>
+        <span class="cert-badge"><i class="fa-solid fa-star"></i> Invisalign Provider</span>
+      </div>
+      <a href="https://wa.me/5517997927094?text=Olá%20Dr.%20Fábio!%20Gostaria%20de%20agendar%20minha%20avaliação." target="_blank" class="btn btn--primary">
+        <i class="fa-solid fa-calendar-check"></i> Agende sua avaliação
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CONSULTÓRIO – GALERIA
+====================================================== -->
+<section class="galeria">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Nosso espaço</span>
+      <h2 class="section-title">Um ambiente moderno <br />pensado para você</h2>
+    </div>
+    <div class="galeria__grid" data-aos="fade-up" data-aos-delay="150">
+      <div class="galeria__item galeria__item--large">
+        <img src="img/consultorio1.jpg" alt="Consultório – recepção" loading="lazy" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/consultorio2.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/consultorio3.jpg" alt="Consultório – equipamentos" loading="lazy" />
+      </div>
+      <div class="galeria__item">
+        <img src="img/consultorio4.jpg" alt="Dr. Fábio com paciente" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     DEPOIMENTOS
+====================================================== -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Depoimentos</span>
+      <h2 class="section-title">Pacientes que já sorriram <br />com a gente</h2>
+    </div>
+
+    <div class="swiper depo-swiper" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="depo-card">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"Sempre tive vergonha de sorrir e o Dr. Fábio mudou completamente isso. Resultado incrível e atendimento nota 10!"</p>
+            <div class="depo-card__author">
+              <img src="img/paciente1.jpg" alt="Fernanda O." loading="lazy" />
+              <div>
+                <strong>Fernanda O.</strong>
+                <span>Paciente há 2 anos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="depo-card">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"O planejamento 3D me deixou muito mais segura para começar. Pude ver meu sorriso final antes de tudo. Recomendo demais!"</p>
+            <div class="depo-card__author">
+              <img src="img/paciente2.jpg" alt="Mariana T." loading="lazy" />
+              <div>
+                <strong>Mariana T.</strong>
+                <span>Alinhadores invisíveis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="depo-card">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"Consultório moderno, equipe atenciosa e resultado além do esperado. Minha filha amou o aparelho colorido!"</p>
+            <div class="depo-card__author">
+              <img src="img/paciente3.jpg" alt="Patrícia N." loading="lazy" />
+              <div>
+                <strong>Patrícia N.</strong>
+                <span>Mãe de paciente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="depo-card">
+            <div class="depo-card__stars">★★★★★</div>
+            <p class="depo-card__text">"Fiz o tratamento em 13 meses! Muito mais rápido do que esperava. O Dr. Fábio é extremamente competente e cuidadoso."</p>
+            <div class="depo-card__author">
+              <img src="img/paciente4.jpg" alt="Ricardo B." loading="lazy" />
+              <div>
+                <strong>Ricardo B.</strong>
+                <span>Aparelho autoligado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="depoimentos__google" data-aos="fade-up">
+      <a href="#" class="btn btn--ghost">
+        <img src="https://www.google.com/favicon.ico" alt="Google" width="18" />
+        Ver todas as avaliações no Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     FAQ
+====================================================== -->
+<section class="faq" id="faq">
+  <div class="container faq__inner">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Dúvidas frequentes</span>
+      <h2 class="section-title">Tudo que você precisa <br />saber antes de começar</h2>
+    </div>
+
+    <div class="faq__list" data-aos="fade-up" data-aos-delay="150">
+
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Dói colocar o aparelho?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-item__a">
+          <p>Apenas uma leve sensibilidade nos 2 primeiros dias de adaptação, completamente normal. A maioria dos pacientes se adapta rapidamente e sem dificuldades.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Quanto tempo dura o tratamento?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-item__a">
+          <p>Em média, de 12 a 24 meses, mas cada caso é único. Na avaliação gratuita, o Dr. Fábio avalia sua situação e apresenta um prazo personalizado.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Posso parcelar o tratamento?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-item__a">
+          <p>Sim! Parcelamos em até 12× no cartão de crédito ou boleto bancário. Trabalhamos para que o investimento no seu sorriso caiba no seu orçamento.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>O alinhador invisível serve para adolescentes?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-item__a">
+          <p>Sim! Os alinhadores modernos são indicados a partir dos 12 anos, inclusive existem versões especialmente desenvolvidas para adolescentes, com indicadores de uso.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">
+          <span>Como funciona a avaliação gratuita?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-item__a">
+          <p>Na consulta de avaliação, o Dr. Fábio analisa sua mordida, alinhamento e saúde bucal. Você sai com um diagnóstico completo, indicação do melhor aparelho e um plano de tratamento personalizado — sem compromisso!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     CTA FINAL
+====================================================== -->
+<section class="cta-final" id="cta-final">
+  <div class="cta-final__bg">
+    <img src="img/sorriso-closeup.jpg" alt="Sorriso lindo após tratamento ortodôntico" loading="lazy" />
+    <div class="cta-final__overlay"></div>
+  </div>
+  <div class="container cta-final__inner" data-aos="zoom-in" data-aos-duration="800">
+    <h2>Pronto para mudar <br />seu sorriso?</h2>
+    <p>Agende hoje mesmo sua avaliação gratuita e descubra o plano perfeito para você.</p>
+    <div class="cta-final__btns">
+      <a href="#hero-form" class="btn btn--white">
+        <i class="fa-solid fa-calendar-check"></i> Agendar Agora
+      </a>
+      <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20agendar%20minha%20avaliação%20gratuita." target="_blank" class="btn btn--whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__col footer__col--brand">
+      <a href="#hero" class="logo logo--light">
+        <span class="logo__icon"><i class="fa-solid fa-tooth"></i></span>
+        <span class="logo__text">Dr. Fábio <strong>Faggione</strong></span>
+      </a>
+      <p>Ortodontia moderna e humanizada em Jales-SP. Transformamos sorrisos e autoestimas há mais de 10 anos.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://wa.me/5517997927094" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Endereço</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Rua [ENDEREÇO], Jales-SP</p>
+      <p><i class="fa-solid fa-phone"></i> (17) 99792-7094</p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5517997927094">WhatsApp</a></p>
+      <p><i class="fa-solid fa-envelope"></i> contato@drfabiofaggione.com.br</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Horários</h4>
+      <p><i class="fa-regular fa-clock"></i> Seg – Sex: 08h às 18h</p>
+      <p><i class="fa-regular fa-clock"></i> Sábado: 08h às 12h</p>
+      <p><i class="fa-solid fa-xmark"></i> Domingo: Fechado</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Certificações</h4>
+      <div class="footer__certs">
+        <span class="cert-badge cert-badge--sm"><i class="fa-solid fa-shield-halved"></i> CRO-SP</span>
+        <span class="cert-badge cert-badge--sm"><i class="fa-solid fa-medal"></i> ABO</span>
+        <span class="cert-badge cert-badge--sm"><i class="fa-solid fa-star"></i> Invisalign Provider</span>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59609.07823506698!2d-50.5765!3d-20.2692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496bf9e8a9c67c9%3A0xd7e1b9e4a06b61b7!2sJales%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1000000000000"
+          width="100%" height="120" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© 2025 Dr. Fábio Faggione – Todos os direitos reservados.</p>
+      <p class="footer__lgpd"><i class="fa-solid fa-lock"></i> Seus dados são protegidos conforme a LGPD. <a href="#">Política de Privacidade</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================
+     FLOATING WHATSAPP
+====================================================== -->
+<a href="https://wa.me/5517997927094?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avaliação%20gratuita."
+   target="_blank" rel="noopener" class="float-whatsapp" aria-label="Falar no WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="float-whatsapp__tooltip">Fale conosco!</span>
+</a>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
