@@ -1251,7 +1251,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
       <div class="form-card">
         <p class="form-card__label">Avaliação 100% gratuita</p>
         <h3 class="form-card__title">Agende agora e transforme seu sorriso</h3>
-        <form class="form" id="leadForm" novalidate>
+        <form class="form" id="leadForm" novalidate action="javascript:void(0)">
           <div class="form__group">
             <label for="nome">Nome completo *</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
@@ -1949,15 +1949,11 @@ if (form) {
     const msg = encodeURIComponent(
       `Olá Dr. Fábio! Me chamo ${nome}, sou de ${cidade} e gostaria de agendar minha avaliação gratuita. Meu WhatsApp: ${wa}`
     );
-    setTimeout(() => {
-      showAlert('Ótimo! Redirecionando para o WhatsApp...', 'success');
-      setTimeout(() => {
-        window.open(`https://wa.me/5517997927094?text=${msg}`, '_blank');
-        form.reset();
-        btn.disabled = false;
-        btn.innerHTML = '<i class="fa-solid fa-calendar-check"></i> Agendar minha avaliação';
-      }, 1200);
-    }, 700);
+    showAlert('Ótimo! Redirecionando para o WhatsApp...', 'success');
+    form.reset();
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fa-solid fa-calendar-check"></i> Agendar minha avaliação';
+    window.location.href = `https://wa.me/5517997927094?text=${msg}`;
   });
 }
 
