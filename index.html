@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -29,19 +29,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --blue:    #C6A76A;
-  --blue-dk: #A8895A;
-  --teal:    #D4B87A;
-  --neutral: #F8F6F2;
-  --dark:    #2E221C;
-  --dark2:   #3A302A;
-  --gray:    #8A8178;
+  --blue:    #0057D8;
+  --blue-dk: #003FA3;
+  --teal:    #0ABFBF;
+  --neutral: #F7F9FC;
+  --dark:    #121A2F;
+  --dark2:   #1E2A45;
+  --gray:    #64748B;
   --light:   #FFFFFF;
-  --gold:    #C6A76A;
-  --shadow:  0 4px 32px rgba(198,167,106,.20);
+  --gold:    #F59E0B;
+  --shadow:  0 4px 32px rgba(0,87,216,.13);
   --radius:  16px;
-  --font1:   'Cormorant Garamond', serif;
-  --font2:   'Poppins', sans-serif;
+  --font1:   'Poppins', sans-serif;
+  --font2:   'Roboto', sans-serif;
   --transition: .3s ease;
 }
 
@@ -50,7 +50,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font2);
   color: var(--dark);
-  background: #F8F6F2;
+  background: #ffffff;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -79,7 +79,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--blue);
-  background: rgba(198,167,106,.10);
+  background: rgba(0,87,216,.08);
   padding: 6px 16px;
   border-radius: 100px;
   margin-bottom: 16px;
@@ -112,12 +112,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .btn--primary {
   background: var(--blue);
   color: #fff;
-  box-shadow: 0 8px 24px rgba(198,167,106,.35);
+  box-shadow: 0 8px 24px rgba(0,87,216,.35);
 }
 .btn--primary:hover {
   background: var(--blue-dk);
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(198,167,106,.45);
+  box-shadow: 0 12px 32px rgba(0,87,216,.45);
 }
 .btn--white {
   background: #fff;
@@ -134,7 +134,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .btn--ghost {
   background: transparent;
   color: var(--dark);
-  border: 2px solid #E8DFD1;
+  border: 2px solid #D0E4FF;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -155,7 +155,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   color: #fff;
   padding: 10px 22px;
   font-size: .82rem;
-  box-shadow: 0 4px 16px rgba(198,167,106,.30);
+  box-shadow: 0 4px 16px rgba(0,87,216,.30);
 }
 .btn--nav:hover { background: var(--blue-dk); }
 .btn--full { width: 100%; }
@@ -181,7 +181,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   font-family: var(--font1);
   font-size: .75rem;
   font-weight: 600;
-  background: rgba(198,167,106,.10);
+  background: rgba(0,87,216,.08);
   color: var(--blue);
   padding: 6px 12px;
   border-radius: 8px;
@@ -199,7 +199,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transition: background .4s, padding .4s, box-shadow .4s;
 }
 .header.scrolled {
-  background: rgba(46,34,28,.96);
+  background: rgba(18,26,47,.96);
   backdrop-filter: blur(16px);
   padding: 12px 0;
   box-shadow: 0 4px 24px rgba(0,0,0,.25);
@@ -279,7 +279,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, rgba(46,34,28,.87) 0%, rgba(78,67,61,.60) 50%, rgba(46,34,28,.20) 100%);
+  background: linear-gradient(105deg, rgba(18,26,47,.82) 0%, rgba(0,57,140,.55) 50%, rgba(18,26,47,.2) 100%);
 }
 .hero__inner {
   position: relative;
@@ -306,7 +306,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   margin-bottom: 20px;
 }
 .hero__title .highlight {
-  background: linear-gradient(90deg, var(--teal), #E8C880);
+  background: linear-gradient(90deg, var(--teal), #6DD5ED);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -383,7 +383,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .form__group input {
   width: 100%;
   padding: 12px 16px;
-  border: 1.5px solid #E8DFD1;
+  border: 1.5px solid #D0E4FF;
   border-radius: 10px;
   font-size: .92rem;
   font-family: var(--font2);
@@ -393,7 +393,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .form__group input:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(198,167,106,.15);
+  box-shadow: 0 0 0 3px rgba(0,87,216,.15);
 }
 .form__check {
   display: flex;
@@ -477,7 +477,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .benefit-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow);
-  border-color: rgba(198,167,106,.12);
+  border-color: rgba(0,87,216,.12);
   background: #fff;
 }
 .benefit-card__icon {
@@ -487,7 +487,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   font-size: 1.6rem;
   margin: 0 auto 20px;
 }
-.benefit-card__icon--blue { background: rgba(198,167,106,.15); color: var(--blue); }
+.benefit-card__icon--blue { background: rgba(0,87,216,.15); color: var(--blue); }
 .benefit-card__icon--teal { background: rgba(212,184,122,.15); color: var(--teal); }
 .benefit-card h3 {
   font-family: var(--font1);
@@ -579,7 +579,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   background: var(--neutral);
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid #E8DFD1;
+  border: 1px solid #D0E4FF;
 }
 .caso-card__imgs {
   display: grid;
@@ -620,7 +620,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   color: #fff;
   font-size: .9rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px rgba(198,167,106,.35);
+  box-shadow: 0 4px 16px rgba(0,87,216,.35);
   z-index: 1;
 }
 .caso-card__info {
@@ -802,7 +802,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   border-radius: var(--radius);
   padding: 36px 32px;
   box-shadow: 0 4px 20px rgba(0,0,0,.06);
-  border: 1px solid #E8DFD1;
+  border: 1px solid #D0E4FF;
   height: auto;
 }
 .depo-card__stars {
@@ -865,7 +865,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .faq-item {
   background: var(--neutral);
   border-radius: 12px;
-  border: 1.5px solid #E8DFD1;
+  border: 1.5px solid #D0E4FF;
   overflow: hidden;
   transition: border-color .2s;
 }
@@ -925,7 +925,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .cta-final__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(46,34,28,.92) 0%, rgba(198,167,106,.50) 100%);
+  background: linear-gradient(135deg, rgba(18,26,47,.92) 0%, rgba(0,87,216,.50) 100%);
 }
 .cta-final__inner {
   position: relative;
@@ -1173,7 +1173,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .mt-0 { margin-top: 0; }
 
   /* Aparelhos sem foto – ícone + gradiente */
-  .aparelho-card__img { background: linear-gradient(135deg,#F8F6F2 0%,#E8DFD1 100%); display:flex; align-items:center; justify-content:center; }
+  .aparelho-card__img { background: linear-gradient(135deg,#F7F9FC 0%,#D0E4FF 100%); display:flex; align-items:center; justify-content:center; }
   .aparelho-card__img img { display:none; }
   .aparelho-icon { font-size:4rem; }
   /* Ocultar seção Antes & Depois (sem fotos) */
@@ -2161,7 +2161,7 @@ document.querySelectorAll('img').forEach(img => {
     if (!this.classList.contains('logo__img')) {
       this.style.opacity = '0';
       if (this.parentElement) {
-        this.parentElement.style.background = 'linear-gradient(135deg, #3A302A 0%, #C6A76A 100%)';
+        this.parentElement.style.background = 'linear-gradient(135deg, #1E2A45 0%, #0057D8 100%)';
       }
     }
   });
