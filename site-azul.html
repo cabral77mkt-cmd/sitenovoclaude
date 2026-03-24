@@ -50,7 +50,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font2);
   color: var(--dark);
-  background: #fff;
+  background: #ffffff;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -134,7 +134,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .btn--ghost {
   background: transparent;
   color: var(--dark);
-  border: 2px solid #E2E8F0;
+  border: 2px solid #D0E4FF;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -155,7 +155,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   color: #fff;
   padding: 10px 22px;
   font-size: .82rem;
-  box-shadow: 0 4px 16px rgba(0,87,216,.3);
+  box-shadow: 0 4px 16px rgba(0,87,216,.30);
 }
 .btn--nav:hover { background: var(--blue-dk); }
 .btn--full { width: 100%; }
@@ -171,8 +171,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   padding: 7px 14px;
   border-radius: 100px;
 }
-.badge--gold { background: rgba(245,158,11,.15); color: #B45309; border: 1px solid rgba(245,158,11,.3); }
-.badge--teal { background: rgba(10,191,191,.15); color: #0E7A7A; border: 1px solid rgba(10,191,191,.3); }
+.badge--gold { background: rgba(245,158,11,.15); color: #8A6A3A; border: 1px solid rgba(245,158,11,.3); }
+.badge--teal { background: rgba(212,184,122,.18); color: #8A6A3A; border: 1px solid rgba(10,191,191,.3); }
 
 .cert-badge {
   display: inline-flex;
@@ -383,7 +383,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .form__group input {
   width: 100%;
   padding: 12px 16px;
-  border: 1.5px solid #E2E8F0;
+  border: 1.5px solid #D0E4FF;
   border-radius: 10px;
   font-size: .92rem;
   font-family: var(--font2);
@@ -393,7 +393,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .form__group input:focus {
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(0,87,216,.12);
+  box-shadow: 0 0 0 3px rgba(0,87,216,.15);
 }
 .form__check {
   display: flex;
@@ -415,7 +415,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .form-card__privacy {
   text-align: center;
   font-size: .72rem;
-  color: #94A3B8;
+  color: #B0A89F;
   margin-top: 12px;
   display: flex;
   align-items: center;
@@ -477,7 +477,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .benefit-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow);
-  border-color: rgba(0,87,216,.1);
+  border-color: rgba(0,87,216,.12);
   background: #fff;
 }
 .benefit-card__icon {
@@ -487,8 +487,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   font-size: 1.6rem;
   margin: 0 auto 20px;
 }
-.benefit-card__icon--blue { background: rgba(0,87,216,.12); color: var(--blue); }
-.benefit-card__icon--teal { background: rgba(10,191,191,.12); color: var(--teal); }
+.benefit-card__icon--blue { background: rgba(0,87,216,.15); color: var(--blue); }
+.benefit-card__icon--teal { background: rgba(212,184,122,.15); color: var(--teal); }
 .benefit-card h3 {
   font-family: var(--font1);
   font-size: 1rem;
@@ -579,7 +579,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   background: var(--neutral);
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #D0E4FF;
 }
 .caso-card__imgs {
   display: grid;
@@ -778,6 +778,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   grid-row: 1 / 3;
   height: 536px;
 }
+.galeria__item--full {
+  grid-column: 1 / 3;
+  height: 460px;
+}
 .galeria__item img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -798,7 +802,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   border-radius: var(--radius);
   padding: 36px 32px;
   box-shadow: 0 4px 20px rgba(0,0,0,.06);
-  border: 1px solid #E2E8F0;
+  border: 1px solid #D0E4FF;
   height: auto;
 }
 .depo-card__stars {
@@ -861,7 +865,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .faq-item {
   background: var(--neutral);
   border-radius: 12px;
-  border: 1.5px solid #E2E8F0;
+  border: 1.5px solid #D0E4FF;
   overflow: hidden;
   transition: border-color .2s;
 }
@@ -921,7 +925,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .cta-final__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,57,140,.88) 0%, rgba(10,191,191,.6) 100%);
+  background: linear-gradient(135deg, rgba(18,26,47,.92) 0%, rgba(0,87,216,.50) 100%);
 }
 .cta-final__inner {
   position: relative;
@@ -1110,6 +1114,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .galeria__grid { grid-template-columns: 1fr 1fr; }
   .galeria__item--large { grid-column: 1 / 3; grid-row: auto; height: 280px; }
+  .galeria__item--full { grid-column: 1 / 3; height: 340px; }
   .galeria__item { height: 200px; }
   /* NAV */
   .nav {
@@ -1157,6 +1162,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .hero__title { font-size: 2rem; }
   .depo-card { padding: 24px 20px; }
   .galeria__item--large { height: 220px; }
+  .galeria__item--full { height: 300px; }
   .galeria__item { height: 160px; }
 }
 
@@ -1166,6 +1172,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }
 
+  /* Aparelhos sem foto – ícone + gradiente */
+  .aparelho-card__img { background: linear-gradient(135deg,#F7F9FC 0%,#D0E4FF 100%); display:flex; align-items:center; justify-content:center; }
+  .aparelho-card__img img { display:none; }
+  .aparelho-icon { font-size:4rem; }
+  /* Ocultar seção Antes & Depois (sem fotos) */
+  .antes-depois { display:none !important; }
+  /* Avatar inicial nos depoimentos */
+  .depo-card__author img { display:none; }
+  .depo-avatar { width:52px; height:52px; border-radius:50%; background:var(--blue); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font1); font-weight:700; font-size:1.2rem; border:3px solid var(--blue); flex-shrink:0; }
   </style>
 </head>
 <body>
@@ -1201,7 +1216,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 ====================================================== -->
 <section class="hero" id="hero">
   <div class="hero__bg">
-    <img src="img/hero-bg.jpg" alt="Dr. Fábio Faggione no consultório" class="hero__img" />
+    <img src="https://litter.catbox.moe/rkardr.jpeg" alt="Dr. Fábio Faggione no consultório" class="hero__img" />
     <div class="hero__overlay"></div>
   </div>
 
@@ -1281,6 +1296,67 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 </section>
 
 <!-- ======================================================
+     APARELHOS / SERVIÇOS
+====================================================== -->
+<section class="aparelhos" id="aparelhos">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Nossas opções</span>
+      <h2 class="section-title">Qual é o aparelho ideal <br />para você?</h2>
+    </div>
+    <div class="aparelhos__grid">
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="aparelho-card__img">
+          <span class="aparelho-icon">🦷</span>
+          <div class="aparelho-card__badge">Mais procurado</div>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Alinhadores Invisíveis</h3>
+          <p>Removíveis, confortáveis e quase invisíveis. Ideal para quem quer discrição total.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20alinhadores%20invisíveis." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="aparelho-card__img">
+          <span class="aparelho-icon">⚙️</span>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Autoligado Metálico</h3>
+          <p>Menos atrito, mais rapidez no tratamento. Alta eficiência e menor número de consultas.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20autoligado." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="aparelho-card__img">
+          <span class="aparelho-icon">✨</span>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Estético de Porcelana</h3>
+          <p>Transparência e elegância. Une eficácia com estética superior para adultos.</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20estético%20de%20porcelana." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="aparelho-card__img">
+          <span class="aparelho-icon">🎨</span>
+          <div class="aparelho-card__badge aparelho-card__badge--pink">Teen</div>
+        </div>
+        <div class="aparelho-card__body">
+          <h3>Tradicional Colorido</h3>
+          <p>Borracha colorida que é sucesso entre os adolescentes. Divertido e funcional!</p>
+          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20colorido." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
      BENEFÍCIOS
 ====================================================== -->
 <section class="beneficios" id="beneficios">
@@ -1318,67 +1394,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
         <h3>Facilidade no Pagamento</h3>
         <p>Parcelamos em até 12× no cartão ou boleto, sem surpresas no bolso.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================
-     APARELHOS / SERVIÇOS
-====================================================== -->
-<section class="aparelhos" id="aparelhos">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <span class="section-tag">Nossas opções</span>
-      <h2 class="section-title">Qual é o aparelho ideal <br />para você?</h2>
-    </div>
-    <div class="aparelhos__grid">
-
-      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="aparelho-card__img">
-          <img src="img/alinhador.jpg" alt="Alinhadores invisíveis" loading="lazy" />
-          <div class="aparelho-card__badge">Mais procurado</div>
-        </div>
-        <div class="aparelho-card__body">
-          <h3>Alinhadores Invisíveis</h3>
-          <p>Removíveis, confortáveis e quase invisíveis. Ideal para quem quer discrição total.</p>
-          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20alinhadores%20invisíveis." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="aparelho-card__img">
-          <img src="img/autoligado.jpg" alt="Aparelho autoligado metálico" loading="lazy" />
-        </div>
-        <div class="aparelho-card__body">
-          <h3>Autoligado Metálico</h3>
-          <p>Menos atrito, mais rapidez no tratamento. Alta eficiência e menor número de consultas.</p>
-          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20autoligado." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="aparelho-card__img">
-          <img src="img/porcelana.jpg" alt="Aparelho estético de porcelana" loading="lazy" />
-        </div>
-        <div class="aparelho-card__body">
-          <h3>Estético de Porcelana</h3>
-          <p>Transparência e elegância. Une eficácia com estética superior para adultos.</p>
-          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20estético%20de%20porcelana." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="aparelho-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="aparelho-card__img">
-          <img src="img/colorido.jpg" alt="Aparelho tradicional colorido" loading="lazy" />
-          <div class="aparelho-card__badge aparelho-card__badge--pink">Teen</div>
-        </div>
-        <div class="aparelho-card__body">
-          <h3>Tradicional Colorido</h3>
-          <p>Borracha colorida que é sucesso entre os adolescentes. Divertido e funcional!</p>
-          <a href="https://wa.me/5517997927094?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20aparelho%20colorido." target="_blank" class="btn btn--outline">Quero saber mais <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1474,7 +1489,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   <div class="container sobre__inner">
     <div class="sobre__img-wrap" data-aos="fade-right" data-aos-duration="900">
       <div class="sobre__img-deco"></div>
-      <img src="img/dentista.jpg" alt="Dr. Fábio Faggione – Ortodontista em Jales-SP" class="sobre__img" loading="lazy" />
+      <img src="https://litter.catbox.moe/70300w.jpg" alt="Dr. Fábio Faggione – Ortodontista em Jales-SP" class="sobre__img" loading="lazy" />
       <div class="sobre__img-badge">
         <i class="fa-solid fa-tooth"></i>
         <div>
@@ -1518,16 +1533,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     </div>
     <div class="galeria__grid" data-aos="fade-up" data-aos-delay="150">
       <div class="galeria__item galeria__item--large">
-        <img src="img/consultorio1.jpg" alt="Consultório – recepção" loading="lazy" />
+        <img src="https://litter.catbox.moe/9w35t7.jpg" alt="Consultório – recepção" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="img/consultorio2.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
+        <img src="https://litter.catbox.moe/yagdsu.jpg" alt="Consultório – sala de atendimento" loading="lazy" />
       </div>
       <div class="galeria__item">
-        <img src="img/consultorio3.jpg" alt="Consultório – equipamentos" loading="lazy" />
+        <img src="https://litter.catbox.moe/pl6u8r.jpg" alt="Dr. Fábio no consultório" loading="lazy" style="object-position: top center;" />
       </div>
-      <div class="galeria__item">
-        <img src="img/consultorio4.jpg" alt="Dr. Fábio com paciente" loading="lazy" />
+      <div class="galeria__item galeria__item--full">
+        <img src="https://litter.catbox.moe/uylkun.jpg" alt="Dr. Fábio com paciente" loading="lazy" style="object-position: center 35%;" />
       </div>
     </div>
   </div>
@@ -1551,7 +1566,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Sempre tive vergonha de sorrir e o Dr. Fábio mudou completamente isso. Resultado incrível e atendimento nota 10!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente1.jpg" alt="Fernanda O." loading="lazy" />
+              <div class="depo-avatar">F</div>
               <div>
                 <strong>Fernanda O.</strong>
                 <span>Paciente há 2 anos</span>
@@ -1565,7 +1580,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"O planejamento 3D me deixou muito mais segura para começar. Pude ver meu sorriso final antes de tudo. Recomendo demais!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente2.jpg" alt="Mariana T." loading="lazy" />
+              <div class="depo-avatar">M</div>
               <div>
                 <strong>Mariana T.</strong>
                 <span>Alinhadores invisíveis</span>
@@ -1579,7 +1594,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Consultório moderno, equipe atenciosa e resultado além do esperado. Minha filha amou o aparelho colorido!"</p>
             <div class="depo-card__author">
-              <img src="img/paciente3.jpg" alt="Patrícia N." loading="lazy" />
+              <div class="depo-avatar">P</div>
               <div>
                 <strong>Patrícia N.</strong>
                 <span>Mãe de paciente</span>
@@ -1593,7 +1608,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
             <div class="depo-card__stars">★★★★★</div>
             <p class="depo-card__text">"Fiz o tratamento em 13 meses! Muito mais rápido do que esperava. O Dr. Fábio é extremamente competente e cuidadoso."</p>
             <div class="depo-card__author">
-              <img src="img/paciente4.jpg" alt="Ricardo B." loading="lazy" />
+              <div class="depo-avatar">R</div>
               <div>
                 <strong>Ricardo B.</strong>
                 <span>Aparelho autoligado</span>
@@ -1686,7 +1701,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 ====================================================== -->
 <section class="cta-final" id="cta-final">
   <div class="cta-final__bg">
-    <img src="img/sorriso-closeup.jpg" alt="Sorriso lindo após tratamento ortodôntico" loading="lazy" />
+    <img src="https://litter.catbox.moe/rkardr.jpeg" alt="Sorriso lindo após tratamento ortodôntico" loading="lazy" />
     <div class="cta-final__overlay"></div>
   </div>
   <div class="container cta-final__inner" data-aos="zoom-in" data-aos-duration="800">
@@ -1774,7 +1789,183 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="js/main.js"></script>
+<script>
+/* =====================================================
+   DR. FÁBIO FAGGIONE – MAIN JS
+   ===================================================== */
+
+/* --- AOS Init --- */
+AOS.init({ once: true, offset: 60, duration: 750 });
+
+/* --- Header scroll --- */
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* --- Hamburger / Mobile nav --- */
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('open');
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+});
+nav.querySelectorAll('.nav__link, .btn--nav').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    nav.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* --- Smooth scroll for anchor links --- */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+
+/* --- Swipers --- */
+new Swiper('.antesdepois-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: '.antesdepois-swiper .swiper-button-next',
+    prevEl: '.antesdepois-swiper .swiper-button-prev',
+  },
+  pagination: { el: '.antesdepois-swiper .swiper-pagination', clickable: true },
+  breakpoints: {
+    768: { slidesPerView: 1 },
+    992: { slidesPerView: 1 },
+  },
+});
+
+new Swiper('.depo-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 24,
+  autoplay: { delay: 5000, disableOnInteraction: false },
+  pagination: { el: '.depo-swiper .swiper-pagination', clickable: true },
+  breakpoints: {
+    640:  { slidesPerView: 1 },
+    900:  { slidesPerView: 2 },
+    1100: { slidesPerView: 3 },
+  },
+});
+
+/* --- FAQ Accordion --- */
+document.querySelectorAll('.faq-item__q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item  = btn.closest('.faq-item');
+    const body  = item.querySelector('.faq-item__a');
+    const open  = item.classList.contains('active');
+    document.querySelectorAll('.faq-item.active').forEach(i => {
+      i.classList.remove('active');
+      i.querySelector('.faq-item__a').style.maxHeight = null;
+      i.querySelector('.faq-item__q').setAttribute('aria-expanded', 'false');
+    });
+    if (!open) {
+      item.classList.add('active');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+/* --- Counter animation --- */
+const counters = document.querySelectorAll('.counter');
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el     = entry.target;
+    const target = +el.getAttribute('data-target');
+    const step   = target / 60;
+    let current  = 0;
+    const tick = () => {
+      current += step;
+      if (current < target) {
+        el.textContent = Math.ceil(current);
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = target.toLocaleString('pt-BR');
+      }
+    };
+    tick();
+    counterObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => counterObserver.observe(c));
+
+/* --- Lead Form --- */
+const form = document.getElementById('leadForm');
+if (form) {
+  const waInput = document.getElementById('whatsapp');
+  waInput.addEventListener('input', () => {
+    let v = waInput.value.replace(/\D/g, '');
+    if (v.length > 11) v = v.slice(0, 11);
+    if (v.length > 6) {
+      v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+    } else if (v.length > 2) {
+      v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+    } else if (v.length > 0) {
+      v = `(${v}`;
+    }
+    waInput.value = v;
+  });
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const nome   = form.nome.value.trim();
+    const wa     = form.whatsapp.value.trim();
+    const cidade = form.cidade.value.trim();
+    const lgpd   = form.lgpd.checked;
+    if (!nome || !wa || !cidade || !lgpd) {
+      showAlert('Por favor, preencha todos os campos e aceite o termo de contato.', 'error');
+      return;
+    }
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
+    const msg = encodeURIComponent(
+      `Olá Dr. Fábio! Me chamo ${nome}, sou de ${cidade} e gostaria de agendar minha avaliação gratuita. Meu WhatsApp: ${wa}`
+    );
+    setTimeout(() => {
+      showAlert('Ótimo! Redirecionando para o WhatsApp...', 'success');
+      setTimeout(() => {
+        window.open(`https://wa.me/5517997927094?text=${msg}`, '_blank');
+        form.reset();
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-calendar-check"></i> Agendar minha avaliação';
+      }, 1200);
+    }, 700);
+  });
+}
+
+function showAlert(msg, type) {
+  const old = document.querySelector('.form-alert');
+  if (old) old.remove();
+  const el = document.createElement('div');
+  el.className = `form-alert form-alert--${type}`;
+  el.style.cssText = `
+    padding: 12px 16px; border-radius: 10px; font-size: .85rem;
+    font-weight: 600; margin-top: 12px;
+    background: ${type === 'success' ? '#D1FAE5' : '#FEE2E2'};
+    color: ${type === 'success' ? '#065F46' : '#991B1B'};
+    border: 1px solid ${type === 'success' ? '#A7F3D0' : '#FECACA'};
+    text-align: center;
+  `;
+  el.textContent = msg;
+  document.getElementById('leadForm').appendChild(el);
+  setTimeout(() => el.remove(), 4000);
+}
+</script>
 
   <script>
 /* =====================================================
