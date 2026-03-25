@@ -783,7 +783,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   height: 460px;
 }
 .galeria__item--square {
-  grid-column: 1 / 3;
+  grid-column: span 1;
   aspect-ratio: 1 / 1;
   height: auto;
 }
@@ -1121,6 +1121,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .galeria__item--large { grid-column: 1 / 3; grid-row: auto; height: 280px; }
   .galeria__item--full { grid-column: 1 / 3; height: 340px; }
   .galeria__item { height: 200px; }
+  .galeria__item--square { height: auto; aspect-ratio: 1 / 1; }
   /* NAV */
   .nav {
     position: fixed;
@@ -1169,6 +1170,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .galeria__item--large { height: 220px; }
   .galeria__item--full { height: 300px; }
   .galeria__item { height: 160px; }
+  .galeria__item--square { height: auto; aspect-ratio: 1 / 1; }
 }
 
 /* ==================================================
@@ -1562,6 +1564,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
       </div>
       <div class="galeria__item galeria__item--square">
         <img src="https://litter.catbox.moe/te7twm.jpg" alt="Dr. Fabio com Betina" loading="lazy" />
+      </div>
+      <div class="galeria__item galeria__item--square">
+        <img src="https://files.catbox.moe/rkj2am.jpeg" alt="Dr. Fabio atendendo paciente" loading="lazy" />
       </div>
     </div>
   </div>
