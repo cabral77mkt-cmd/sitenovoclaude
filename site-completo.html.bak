@@ -1309,7 +1309,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
           <i class="fa-solid fa-cube"></i>
         </div>
         <h3>Acompanhamento Personalizado</h3>
-        <p>Plano de tratamento feito sob medida para o seu sorriso, com retornos periódicos para ajustar os aparelhos e garantir o melhor resultado possível.</p>
+        <p>Tratamento personalizado com retornos periódicos para ajustes e acompanhamento do seu resultado.</p>
       </div>
       <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
         <div class="benefit-card__icon benefit-card__icon--teal">
