@@ -150,7 +150,7 @@ if (form) {
 
     // WhatsApp redirect as lead capture
     const msg = encodeURIComponent(
-      `Olá Dr. Fábio! Me chamo ${nome}, sou de ${cidade} e gostaria de agendar minha avaliação gratuita. Meu WhatsApp: ${wa}`
+      `Olá Dr. Fabio! Me chamo ${nome}, sou de ${cidade} e gostaria de agendar minha avaliação gratuita. Meu WhatsApp: ${wa}`
     );
 
     setTimeout(() => {

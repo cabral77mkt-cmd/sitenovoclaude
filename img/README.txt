@@ -1,12 +1,12 @@
-IMAGENS NECESSÁRIAS – substituir pelos arquivos reais do Dr. Fábio Faggione
+IMAGENS NECESSÁRIAS – substituir pelos arquivos reais do Dr. Fabio Faggione
 ===========================================================================
 
-hero-bg.jpg         → Foto do consultório com Dr. Fábio e paciente sorrindo
-dentista.jpg        → Foto profissional do Dr. Fábio (portrait, fundo claro)
+hero-bg.jpg         → Foto do consultório com Dr. Fabio e paciente sorrindo
+dentista.jpg        → Foto profissional do Dr. Fabio (portrait, fundo claro)
 consultorio1.jpg    → Recepção do consultório
 consultorio2.jpg    → Sala de atendimento
 consultorio3.jpg    → Equipamentos / panorâmica
-consultorio4.jpg    → Dr. Fábio com paciente em atendimento
+consultorio4.jpg    → Dr. Fabio com paciente em atendimento
 alinhador.jpg       → Foto de alinhadores invisíveis
 autoligado.jpg      → Aparelho autoligado metálico
 porcelana.jpg       → Aparelho estético de porcelana
